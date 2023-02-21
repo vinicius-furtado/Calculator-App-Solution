@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+html {
+  background-color: hsl(222, 26%, 31%);
+  transition: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.fundo {
+  color: white;
+  text-align: right;
+}
+
+.calculadora {
+  position: absolute;
+  background-color: hsl(222, 26%, 31%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: 0.2s;
+}
+
+h1 {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+h2 {
+  width: 250px;
+  text-align: right;
+  font-size: 0.625rem;
+  letter-spacing: 2px;
+  margin: 0px -2rem 0.5rem 0px;
+}
+
+table {
+  width: 100%;
+}
+
+#keypad {
+  padding: 0.5rem 0.7rem;
+  margin-top: 1rem;
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 7px;
+  border-spacing: 0.5rem;
+  text-align: center;
+}
+
+.botao {
+  width: 67px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  margin: 0.25rem 0 0.25rem 0;
+  border-radius: 7px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.botao-branco {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  font-size: 2.00rem;
+  box-shadow: 0px 3px 1px 0px hsl(28, 16%, 65%);
+}
+
+.botao-azul {
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: 0px 3px 1px 0px hsl(224, 28%, 35%);
+}
+
+.botao-vermelho {
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: 0px 3px 1px 0px hsl(6, 70%, 34%);
+}
+
+#reset {
+  width: 150px;
+}
+
+#igual {
+  width: 150px;
+}
+
+.botao:hover {
+  transform: translateY(2px);
+}
+
+.botao-branco:hover {
+  background-color: white;
+}
+
+.botao-azul:hover {
+  background-color: #a2b3e1;
+}
+
+.botao-vermelho:hover {
+  background-color: #f96c5b;
+}
+
+#resultado {
+  height: 46px;
+  background-color: hsl(224, 36%, 15%);
+  font-size: 3.125rem;
+  color: white;
+  text-align: right;
+  padding: 23px 15px 8px 15px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+
+footer {
+  padding: 1.50rem 0;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+}
+
+footer span {
+  color: hsl(6, 63%, 50%);
+  font-weight: bold;
+  transition: .4s;
+}
+
+footer span:hover {
+  color: #f96c5b;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+  }
+
+  #resultado {
+    width: 270px;
+    height: 46px;
+    font-size: 38px;
+    text-align: right;
+    padding: 23px 15px 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+  }
+
+  .botao {
+    width: 55px;
+    height: 55px;
+    margin: 5px 2px;
+  }
+
+  #reset {
+    width: 120px;
+  }
+
+  #igual {
+    width: 120px;
+  }
+
+  h2 {
+    width: 200px;
+  }
+}
